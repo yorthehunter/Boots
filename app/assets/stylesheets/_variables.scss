@@ -18,6 +18,8 @@ $grayLight:             #999 !default;
 $grayLighter:           #eee !default;
 $white:                 #fff !default;
 
+$rgbaBlack:             rgba(0,0,0,1.0);
+$rgbaWhite:             rgba(255,255,255,1.0);
 
 // Accent colors
 // -------------------------
@@ -31,6 +33,15 @@ $pink:                  #c3325f !default;
 $purple:                #7a43b6 !default;
 
 
+// Transparencies
+// -------------------------
+$transLighter:          0.1 !default;
+$transLight:            0.2 !default;
+$transNormal:           0.4 !default;
+$transDark:             0.6 !default;
+$transDarker:           0.8 !default;
+
+
 // Scaffolding
 // -------------------------
 $bodyBackground:        $white !default;
@@ -40,7 +51,7 @@ $textColor:             $grayDark !default;
 // Links
 // -------------------------
 $linkColor:             #08c !default;
-$linkColorHover:        darken($linkColor, 15) !default;
+$linkColorHover:        lighten($linkColor, 15) !default;
 
 
 // Typography
@@ -52,7 +63,7 @@ $altFontFamily:         Georgia, "Times New Roman", Times, serif !default;
 
 $headingsFontFamily:    inherit !default; // empty to use BS default, @baseFontFamily
 $headingsFontWeight:    bold !default;    // instead of browser default, bold
-$headingsColor:         inherit !default; // empty to use BS default, @textColor
+$headingsColor:         $grayDark !default; // empty to use BS default, @textColor
 
 
 // Tables
@@ -123,8 +134,8 @@ $zindexModal:             1050 !default;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:          "../img/glyphicons-halflings.png";
-$iconWhiteSpritePath:     "../img/glyphicons-halflings-white.png";
+$iconSpritePath:          "icons/glyphicons-halflings.png";
+$iconWhiteSpritePath:     "icons/glyphicons-halflings-white.png";
 
 
 // Input placeholder text color
@@ -140,7 +151,7 @@ $hrBorder:                $grayLighter !default;
 // Navbar
 // -------------------------
 $navbarHeight:                    40px !default;
-$navbarBackground:                $grayDarker !default;
+$navbarBackground:                rgba($grayDarker,$transDarker) !default;
 $navbarBackgroundHighlight:       $grayDark !default;
 
 $navbarText:                      $grayLight !default;
@@ -190,8 +201,8 @@ $infoBorder:              darken(adjust-hue($infoBackground, -10), 7%) !default;
 // Default 940px grid
 // -------------------------
 $gridColumns:             12 !default;
-$gridColumnWidth:         60px !default;
-$gridGutterWidth:         20px !default;
+$gridColumnWidth:         54px !default;
+$gridGutterWidth:         30px !default;
 $gridRowWidth:            ($gridColumns * $gridColumnWidth) + ($gridGutterWidth * ($gridColumns - 1)) !default;
 
 

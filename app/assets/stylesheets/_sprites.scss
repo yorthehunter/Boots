@@ -26,6 +26,8 @@
   background-repeat: no-repeat;
 
   @include ie7-restore-right-whitespace();
+
+  @include opacity($opacity: ($transDark * 100));
 }
 .icon-white {
   background-image: url($iconWhiteSpritePath);

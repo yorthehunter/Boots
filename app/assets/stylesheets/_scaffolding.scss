@@ -22,6 +22,7 @@ body {
 a {
   color: $linkColor;
   text-decoration: none;
+  @include transition(color 150ms ease-in);
 }
 a:hover {
   color: $linkColorHover;
